@@ -47,7 +47,8 @@ function handleSubmit(evt) {
     totalCashbackEl.textContent = `${result.totalCashback} руб.`;
 }
  const formEl = document.getElementById('cashback-form');
- formEl.onsubmit = handleSubmit;
+
+formEl.addEventListener('submit', handleSubmit);
 
 const specialAmountErrorEl = document.getElementById('special-amount-error');
 const otherAmountErrorEl = document.getElementById('other-amount-error');
