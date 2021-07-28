@@ -52,11 +52,8 @@ function handleSubmit(evt) {
         return;
     }
     const result = calculateCashback(specialAmount, otherAmount);
-    //const specialCashbackEl = document.getElementById('special-cashback');
     specialCashbackEl.textContent = `${result.specialCategoryCashback} руб.`;
-    //const otherCashbackEl = document.getElementById('other-cashback');
     otherCashbackEl.textContent = `${result.otherCategoryCashback} руб.`;
-    //const totalCashbackEl = document.getElementById('total-cashback');
     totalCashbackEl.textContent = `${result.totalCashback} руб.`;
 
 }
